@@ -1,6 +1,6 @@
 {
   "name": "subscribable-value",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Subscribable value",
   "scripts": {
     "prebuild": "rimraf ./dist && mkdirp ./dist",
