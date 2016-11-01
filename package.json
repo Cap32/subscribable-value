@@ -39,6 +39,6 @@
     "rimraf": "^2.5.4"
   },
   "dependencies": {
-    "subscribable-lite": "^0.0.3"
+    "subscribable-lite": "^0.0.4"
   }
 }
