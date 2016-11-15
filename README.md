@@ -51,4 +51,4 @@ val.set(2333);
 
 ## License
 
-MIT
+MIT @ Cap32
