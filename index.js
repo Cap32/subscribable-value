@@ -1,5 +1,6 @@
 
 const SubLite = require('subscribable-lite');
+const assign = require('object-assign');
 
 const _val = '_subscribable_value';
 const _sub = '_subscribable_lite';
@@ -9,7 +10,7 @@ const SubValue = function SubValue(initialValue) {
 	this[_val] = initialValue;
 };
 
-Object.assign(SubValue.prototype, {
+assign(SubValue.prototype, {
 	get() {
 		return this[_val];
 	},
