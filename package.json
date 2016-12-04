@@ -18,6 +18,11 @@
   },
   "main": "index.js",
   "browser": "browser.js",
+  "files": [
+    "dist",
+    "browser.js",
+    "README.md"
+  ],
   "author": "cap32",
   "license": "MIT",
   "devDependencies": {
