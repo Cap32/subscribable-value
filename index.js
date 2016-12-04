@@ -14,9 +14,10 @@ assign(SubValue.prototype, {
 	get() {
 		return this[_val];
 	},
-	set(newValue) {
-		this[_val] = newValue;
-		this[_sub].publish(newValue);
+	set(nextValue) {
+		const prevValue = this[_val];
+		this[_val] = nextValue;
+		this[_sub].publish(nextValue, prevValue);
 	},
 	subscribe(fn) {
 		return this[_sub].subscribe(fn);
