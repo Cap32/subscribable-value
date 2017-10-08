@@ -4096,11 +4096,9 @@ strip-json-comments@~2.0.1:
   version "2.0.1"
   resolved "http://registry.npm.taobao.org/strip-json-comments/download/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
 
-subscribable-lite:
-  version "0.0.5"
-  resolved "http://registry.npm.taobao.org/subscribable-lite/download/subscribable-lite-0.0.5.tgz#0b655c01258ef318ffcdb6cc34fea0626403f87f"
-  dependencies:
-    object-assign "^4.1.0"
+subscribable-lite@^1.0.0:
+  version "1.0.0"
+  resolved "http://registry.npm.taobao.org/subscribable-lite/download/subscribable-lite-1.0.0.tgz#b20d5dff55277c310ed02a45c8e0b01d0088e801"
 
 supports-color@^2.0.0:
   version "2.0.0"

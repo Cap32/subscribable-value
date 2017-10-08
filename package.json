@@ -11,7 +11,7 @@
     "start": "npm test -- -w",
     "test": "jest --coverage",
     "coverage": "cat ./coverage/lcov.info | coveralls",
-    "prepublish": "npm run build"
+    "preversion": "npm test && npm run build"
   },
   "repository": {
     "url": "git@github.com:Cap32/subscribable-value.git",
@@ -47,7 +47,7 @@
     "rimraf": "^2.6.2"
   },
   "dependencies": {
-    "subscribable-lite": "^0.0.5"
+    "subscribable-lite": "^1.0.0"
   },
   "jest": {
     "modulePathIgnorePatterns": [
