@@ -1,6 +1,6 @@
 Subscribable value
 
-[![Build Status](https://travis-ci.org/Cap32/subscribable-value.svg?branch=master)](https://travis-ci.org/Cap32/subscribable-value) [![Coverage Status](https://coveralls.io/repos/github/Cap32/subscribable-value/badge.svg?branch=master)](https://coveralls.io/github/Cap32/subscribable-value?branch=master)
+[![Build Status](https://travis-ci.org/Cap32/subscribable-value.svg?branch=master)](https://travis-ci.org/Cap32/subscribable-value) [![Coverage Status](https://coveralls.io/repos/github/Cap32/subscribable-value/badge.svg?branch=master)](https://coveralls.io/github/Cap32/subscribable-value?branch=master) [![dependencies Status](https://david-dm.org/Cap32/subscribable-value/status.svg)](https://david-dm.org/Cap32/subscribable-value)
 
 ## Installing
 

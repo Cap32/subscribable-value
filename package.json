@@ -25,6 +25,12 @@
     "README.md",
     "LICENSE.md"
   ],
+  "keywords": [
+    "lightweight",
+    "subscribe",
+    "publish",
+    "state-management"
+  ],
   "author": "cap32",
   "license": "MIT",
   "devDependencies": {
