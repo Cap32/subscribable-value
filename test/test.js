@@ -1,18 +1,17 @@
 
 const SubValue = require('../');
-const assert = require('assert');
 
 describe('SubValue', function () {
 	it('initial value', function () {
 		const initialValue = 0;
 		const val = new SubValue(initialValue);
-		assert(val.get() === initialValue);
+		expect(val.get()).toBe(initialValue);
 	});
 
 	it('set', function (done) {
 		const val = new SubValue(0);
 		val.subscribe((newValue) => {
-			assert(newValue === 2333);
+			expect(newValue).toBe(2333);
 			done();
 		});
 		val.set(2333);
@@ -21,23 +20,25 @@ describe('SubValue', function () {
 	it('get', function () {
 		const val = new SubValue(0);
 		val.set(2333);
-		assert(val.get() === 2333);
+		expect(val.get()).toBe(2333);
 	});
 
-	it('unsubscribe', function (done) {
+	it('unsubscribe', function () {
 		const val = new SubValue();
-		const unsubscribe = val.subscribe(() => assert(false));
+		const handler = jest.fn();
+		const unsubscribe = val.subscribe(handler);
 		unsubscribe();
 		val.set(1);
-		setTimeout(done, 1000);
+		expect(handler.mock.calls.length).toBe(0);
 	});
 
-	it('unsubscribe all', function (done) {
+	it('unsubscribe all', function () {
 		const val = new SubValue();
-		val.subscribe(() => assert(false));
-		val.subscribe(() => assert(false));
+		const handler = jest.fn();
+		val.subscribe(handler);
+		val.subscribe(handler);
 		val.unsubscribe();
 		val.set();
-		setTimeout(done, 1000);
+		expect(handler.mock.calls.length).toBe(0);
 	});
 });
