@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2016 Webb
+Copyright (c) 2017 Christopher Peng (Cap32)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
